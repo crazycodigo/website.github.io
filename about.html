@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg">
+            <img src="./img/flowers-aesthetic.gif" alt="prettyyy">
+        </div>
+        <div class="wrapper">
+            <a href="#about">
+                <div class="card">
+                    <div class="content">
+                        <img src="./img/delight.png" alt="delight">
+                    </div>
+                </div>
+            </a>
+            <div class="button">
+                <a href="#section">About Me</a>
+            </div>
+        </div>
+    </div>
+    <div id="section">
+        <nav>
+            <ul>
+                <li> <a href="./index.html">Home</a></li>
+                <li> <a href="./minecraft.html">Minecraft</a></li>
+                <li id="active"> <a href="./about.html" style="color: black;">About Me</a></li>
+                <li> <a href="./link.html">Links</a></li>
+            </ul>
+        </nav>
+        <section id='about' class="desc">
+            <p>Hi! I am Devansh Asthana from Lucknow, India. I am currently pursuing business management from Shiv Nadar
+                University. This website is meant to be a collection of everything I love and enjoy.</p>
+            <p>Stay delighted :)</p>
+            <!-- <div class="image">
+                    <img src="anime.png" alt="">
+                </div> -->
+            <div class="small"></div>
+        </section>
+    </div>
+    <div class="footer">
+        <div class="follow">
+            <span>follow me</span>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/devanshasthana/"><i class="bi bi-linkedin"></i>LinkedIn</a>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UCp5s2bOTDdGJSxO9h1WpIXg"><i
+                            class="bi bi-youtube"></i>Youtube</a></li>
+                <li><a href="./ricklol.html"><span class="iconify-inline" data-icon="simple-icons:tinder" style="color: #d4f5d4;"></span>Tinder</a></li>
+                <li><a href="https://twitter.com/DelighteDev"><i class="bi bi-twitter"></i>Twitter</a></li>
+                <li><a href="https://www.instagram.com/delightedev/"><i class="bi bi-instagram"></i>Instagram</a>
+                </li>
+            </ul>
+        </div>
+        <div class="devs">
+            <span>Developed by</span>
+            <span class="names">
+                <span>
+                    <a href="https://www.linkedin.com/in/shivpreet-padhi-828273223/">Shivpreet Padhi</a>
+                    And
+                    <a href="https://www.linkedin.com/in/jayantigoswami/">Jayanti Goswami</a>
+                </span>
+                <span>
+                    From <a href="https://github.com/crazycodigo">Crazy Codigo</a>
+                </span>
+            </span>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 15,
+            speed: 300,
+            glare: true,
+            "max-glare": 1,
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+    <script>
+        const card = document.querySelector('.card');
+        const button = document.querySelector('.button');
+        const small = document.querySelector('.small');
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+            card.style.bottom = value * 0.5 + 'px';
+        });
+
+    </script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+
+</html>

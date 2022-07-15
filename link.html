@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: aliceblue;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .box{
+            display: flex;
+            width: 500px;
+            text-align: center;
+            height: 200px;
+            /* margin:auto; */
+            position:relative;
+            background-color: green;
+            border-radius: 3px;
+            font-size: small;
+            justify-content: center;
+            align-items: center;
+            animation-name: shiv;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes shiv {
+            0%{
+                width: 50px;
+                top:0px;
+                left:0px;
+                font-size: 50%;
+            }
+            25%{
+                width: 500px;
+                top:0px;
+                left:250px;
+                font-size: 70%;
+            }
+            50%{
+                width: 50px;
+                top:250px;
+                left:250px;
+                font-size: 100%;
+            }
+            75%{
+                width:500px;
+                top:250px;
+                left: 0px;
+                font-size: 70%;
+            }
+            100%{
+                width: 50px;
+                top:0px;
+                left:0px;
+                font-size: 50%;
+            }
+        }
+
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="./index.html">
+        <div class="box">
+            <p>DEVS 404</p>
+        </div>
+    </a>
+    </div>
+</body>
+</html>

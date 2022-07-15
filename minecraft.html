@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link rel="stylesheet" href="mc.css"> -->
+    <link rel="stylesheet" href="./css/minecraft.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- <link rel="stylesheet" href="./css/nav.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <img class="banner" src="./img/minecraft.jpg" alt="">
+            <img class="logo" src="./img/mclogo.png" />
+            <div class="skeli">
+                <img src="./img/skeleton.png" alt="">
+            </div>
+            <div class="piggi">
+                <img src="./img/pig.png" alt="">
+            </div>
+            
+        </div>
+        <section class="blog">
+        <nav>
+            <ul>
+                <li> <a href="./index.html">Home</a></li>
+                <li id="active"> <a href="#">Minecraft</a></li>
+                <li> <a href="./about.html">About Me</a></li>
+                <li> <a href="./link.html">Links</a></li>
+            </ul>
+        </nav>
+        <section class="step_one">
+            <div class="img sec">
+                <img src="./img/tlauncher.png" alt="">
+            </div>
+            <div class="text sec">
+                <span>Step 1</span>
+                <span>Download <a href="https://tlauncher.org/en/">TLauncher</a></span>
+            </div>
+        </section>
+        <section class="step_one reverse">
+            <div class="img sec">
+                <img src="./img/register.png" alt="">
+            </div>
+            <div class="text sec">
+                <span>Step 2</span>
+                <span>Log in and launch the latest version</span>
+            </div>
+        </section>
+        <section class="step_one">
+            <div class="img sec">
+                <img src="./img/homepagemc.png" alt="">
+            </div>
+            <div class="text sec">
+                <span>Step 3</span>
+                <span>Go to multiplayer mode</span>
+            </div>
+        </section>
+        <section class="step_one reverse">
+            <div class="img sec">
+                <img src="./img/server.jpeg" alt="">
+            </div>
+            <div class="text sec">
+                <span>Step 4</span>
+                <span>Add sever with address <h2>"play.delightedev.com"</h2></span>
+            </div>
+        </section>
+    </section>
+    <div class="footer">
+        <div class="follow">
+            <span>follow me</span>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/devanshasthana/"><i class="bi bi-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/channel/UCp5s2bOTDdGJSxO9h1WpIXg"><i class="bi bi-youtube"></i>Youtube</a></li>
+                <li><a href="./ricklol.html"><span class="iconify-inline" data-icon="simple-icons:tinder" style="color: #d4f5d4;"></span>Tinder</a></li>
+                <li><a href="https://twitter.com/DelighteDev"><i class="bi bi-twitter"></i>Twitter</a></li>
+                <li><a href="https://www.instagram.com/delightedev/"><i class="bi bi-instagram"></i>Instagram</a></li>
+            </ul>
+        </div>
+        <div class="devs">
+            <span>Developed by</span>
+            <span class="names">
+                <span>
+                    <a href="https://www.linkedin.com/in/shivpreet-padhi-828273223/">Shivpreet Padhi</a>
+                    And
+                    <a href="https://www.linkedin.com/in/jayantigoswami/">Jayanti Goswami</a>
+                </span>
+                <span>
+                    From <a href="https://github.com/crazycodigo">Crazy Codigo</a>
+                </span>
+            </span>
+        </div>
+    </div>
+</div>
+    <script>
+        const skeli = document.querySelector('.skeli');
+        const piggi = document.querySelector('.piggi');
+        const logo = document.querySelector('.logo');
+
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+            skeli.style.bottom = value * 0.4 + 'px';
+            piggi.style.bottom = value * 0.4 + 'px';
+            logo.style.top = value * 0.9 + 'px';
+            // logo.style.left = value * 2.5 + 'px';
+        });
+    </script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+</html>

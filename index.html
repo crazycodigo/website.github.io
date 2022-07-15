@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/cube.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delighted Dev</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img id="main_img" src="img/background.jpg" alt="">
+        <div class="text" id="text">
+            <ul>
+                <li>O</li>
+                <li>H</li>
+                <li>A</li>
+                <li>Y</li>
+                <li>O</li>
+            </ul>
+        </div>
+    </div>
+    <section id="new">
+        <nav>
+            <ul>
+                <li> <a class='active' href="#new">Home</a></li>
+                <li> <a href="./minecraft.html">Minecraft</a></li>
+                <li> <a href="./about.html">About Me</a></li>
+                <li> <a href="./link.html">Links</a></li>
+            </ul>
+        </nav>
+        <div class="body">
+            <div class="container">
+                <div class="cube">
+                    <div class="item one"><img src="img/reyna.jfif" alt=""></div>
+                    <div class="item two"><img src="img/genshin.png" alt=""></div>
+                    <div class="item three"><img src="img/Minecraft.png" alt=""></div>
+                    <div class="item four"><img src="img/undertale.jpg" alt=""></div>
+                    <div class="item five">5</div>
+                    <div class="item six"><img src="img/fallguys.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+        <div class="logo">
+            <span>The</span>
+            <span>Delight</span>
+            <span>Experience.</span>
+        </div>
+        <div class="c1"></div>
+    </section>
+    <div class="footer">
+        <div class="follow">
+            <span>follow me</span>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/devanshasthana/"><i class="bi bi-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/channel/UCp5s2bOTDdGJSxO9h1WpIXg"><i class="bi bi-youtube"></i>Youtube</a></li>
+                <li><a href="./ricklol.html"><span class="iconify-inline" data-icon="simple-icons:tinder" style="color: #d4f5d4;"></span>Tinder</a></li>
+                <li><a href="https://twitter.com/DelighteDev"><i class="bi bi-twitter"></i>Twitter</a></li>
+                <li><a href="https://www.instagram.com/delightedev/"><i class="bi bi-instagram"></i>Instagram</a></li>
+            </ul>
+        </div>
+        <div class="devs">
+            <span>Developed by</span>
+            <span class="names">
+                <span>
+                    <a href="https://www.linkedin.com/in/shivpreet-padhi-828273223/">Shivpreet Padhi</a>
+                    And
+                    <a href="https://www.linkedin.com/in/jayantigoswami/">Jayanti Goswami</a>
+                </span>
+                <span>
+                    From <a href="https://github.com/crazycodigo">Crazy Codigo</a>
+                </span>
+            </span>
+        </div>
+    </div>
+    <script>
+        let body = document.querySelector('body')
+
+        document.getElementById('text').addEventListener('click', function () {
+            // console.log(e);
+            window.location.href = '#new'
+        });
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            if (value != 0) {
+                body.style.overflowY = 'auto';
+            }
+            else {
+                body.style.overflowY = 'hidden';
+            }
+        });
+        document.querySelector('html').style.scrollBehavior = '';
+        window.onbeforeunload = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'instant'
+            })
+        }
+    </script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+
+</html>
