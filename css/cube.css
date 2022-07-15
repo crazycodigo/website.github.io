@@ -1,0 +1,108 @@
+.item{
+    color:black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* background-color: bisque; */
+    /* border: 2px gray solid; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    z-index: 1;
+}
+
+.container{
+    width: 50vh;
+    height: 50vh;
+    position: relative;
+    pointer-events: none;
+    perspective: 1000px;
+    margin: 0 auto;
+    animation: updown 5s infinite linear;
+}
+
+@keyframes updown {
+    0%{
+        transform: translateY(50px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+.cube{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translateX(100vh) translateZ(-10vh) rotateZ(180deg) rotateX(-45deg) rotateY(45deg);
+    animation: rotation 10s linear infinite;
+}
+
+@keyframes rotation{
+  
+
+    0%{
+        transform: translateX(70vh) translateY(15vh) translateZ(-50vh) rotateY(360deg) rotateZ(360deg);
+    }
+
+    50%{
+        transform: translateX(70vh) translateY(15vh) translateZ(-50vh) rotateY(180deg) rotateZ(180deg);
+    }
+
+    100%{
+        transform: translateX(70vh) translateY(15vh) translateZ(-50vh) rotateY(0deg) rotateZ(0deg);
+    }
+}
+.one{
+    transform: translateZ(25vh) rotateY(0deg);
+}
+
+.two{
+    transform: translateZ(-25vh) rotateX(180deg) rotateZ(-180deg);
+}
+
+.three{
+    transform: translateX(-25vh) rotateY(90deg);
+}
+
+.four{
+    transform: translateX(25vh) rotateY(-90deg);
+}
+
+.five{
+    transform: translateY(-25vh) rotateX(-90deg);
+}
+
+.six{
+    transform: translateY(25vh) rotateX(-90deg);
+}
+
+.cube img{
+    height:100%;
+    width: 100%;
+}
+
+/* .item::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10em;
+    bottom: 0;
+    background: linear-gradient(to top, white, transparent);
+    z-index: 100;
+}
+
+.six::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: white;
+    z-index: 100;
+    /* opacity: 0.7; }*/

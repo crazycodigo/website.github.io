@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+body{
+    max-height: 100vh;
+}
+
+.shadow{
+    height: 0.5em;
+    width: 50vh;
+    background-color: rgb(212, 245, 212);
+    opacity: 0.7;
+    border-radius: 50%;
+    box-shadow: 5px 0px 10px 10px rgb(212, 245, 212);
+    position: absolute;
+    transform: translateX(55vh) translateY(40vh) translateZ(50vh);
+    animation: shadow 5s infinite linear;
+}
+
+@keyframes shadow {
+    0%{
+        width: 40vh;
+        opacity: 0.7;
+    }
+    50%{
+        width: 50vh;
+        opacity: 0.5;
+    }
+    100%{
+        width: 40vh;
+        opacity: 0.7;
+    }
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translateX(-15em) translateY(-35vh);
+    z-index: 11;
+    position: relative;
+}
+
+.logo span{
+    color: rgb(83, 222, 2);
+    font-family: 'Rubik Moonrocks', cursive;
+    margin-bottom: 1.1rem;
+    font-size: 5em;
+}
+
+.logo span:nth-child(1){
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(212, 245, 212) !important;
+    /* transform: translateY(-10vh); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo span:nth-child(2){
+    font-size: 7em;
+    line-height: 100px;
+}
+
+.logo span:nth-child(3){
+    font-size: 3.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(212, 245, 212) !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.c1{
+    width:50vh;
+    height: 50vh;
+    background-color: black;
+    border-radius: 50%;
+    background: radial-gradient(rgb(54, 255, 4),rgb(213, 255, 202));
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0px 10px 100px 70px rgb(151, 192, 145);
+    opacity: 0.8;
+    bottom: -100vh;
+    left: 0;
+    border-top-right-radius:100%;
+    border-top-left-radius:0;
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+}
