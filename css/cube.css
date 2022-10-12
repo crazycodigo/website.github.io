@@ -106,3 +106,15 @@
     background: white;
     z-index: 100;
     /* opacity: 0.7; }*/
+
+    
+@media (max-width:1500px){
+    .cube,.shadow{
+        display: none;
+    }
+}
+@media (max-width:793px){
+    nav{
+        display: none;
+    }
+}

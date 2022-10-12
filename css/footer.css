@@ -91,3 +91,24 @@
 i {
     padding-right: 4px;
 }
+
+@media (max-width:1228px){
+    .devs{
+        display: none;
+    }
+}
+
+@media (max-width:893px){
+    .follow{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .follow ul li{
+        margin: 0;
+    }
+    .follow ul li a span{
+        display: none;
+    }
+}
