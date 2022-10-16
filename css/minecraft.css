@@ -23,6 +23,7 @@ body{
 
 .banner{
     height: 100vh;
+    object-fit: cover;
     width: 100%;
     /* position: absolute; */
 }
@@ -126,7 +127,7 @@ nav ul li a:hover{
 }
 
 .blog img{
-    object-fit: cover;
+    object-fit:cover;
     height: 90%;
     width: 95%;
     margin-right: 1px;
@@ -160,4 +161,16 @@ nav ul li a:hover{
     text-decoration: none;
     font-weight: 600;
     color: rgb(43, 85, 0);
+}
+
+@media (max-width:600px){
+    .piggi{
+        display: none;
+    }
+    .logo{
+        width: 80%
+    }
+    .skeli{
+        width: 70%;
+    }
 }
