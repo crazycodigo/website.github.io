@@ -127,7 +127,7 @@ nav ul li a:hover{
 }
 
 .blog img{
-    object-fit:cover;
+    object-fit:fit;
     height: 90%;
     width: 95%;
     margin-right: 1px;
@@ -168,7 +168,7 @@ nav ul li a:hover{
         display: none;
     }
     .logo{
-        width: 80%
+        width: 80%;
     }
     .skeli{
         width: 70%;
